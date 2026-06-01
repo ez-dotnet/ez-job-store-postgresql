@@ -1,5 +1,6 @@
 using EZ.Job.Core;
 using EZJob.Store.PostgreSQL;
+using Xunit;
 
 namespace EZ.Job.Store.PostgreSQL.Tests;
 
