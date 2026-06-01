@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/EZ.Job.Store.PostgreSQL/EZ.Job.Store.PostgreSQL.csproj" />
+  </Folder>
+  <Folder Name="/samples/">
+    <Project Path="samples/EZ.Job.Store.PostgreSQL.Sample/EZ.Job.Store.PostgreSQL.Sample.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/EZ.Job.Store.PostgreSQL.Tests/EZ.Job.Store.PostgreSQL.Tests.csproj" />
+  </Folder>
+</Solution>
