@@ -145,7 +145,9 @@ public sealed class PostgreSqlJobStore : IJobStore
             Status: (JobStatus)reader.GetInt32(5),
             CreatedAt: reader.GetDateTime(6),
             Error: reader.IsDBNull(7) ? null : reader.GetString(7),
-            RecurringJobId: reader.IsDBNull(8) ? null : reader.GetString(8));
+            RecurringJobId: reader.IsDBNull(8) ? null : reader.GetString(8),
+            StartedAt: null,
+            CompletedAt: null);
     }
 
     private static string SerializeArgs(object?[] args)

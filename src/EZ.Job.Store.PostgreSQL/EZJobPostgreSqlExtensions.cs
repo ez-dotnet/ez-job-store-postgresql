@@ -16,6 +16,7 @@ public static class EZJobPostgreSqlExtensions
         configure(options);
 
         builder.Services.AddSingleton<IJobStore>(_ => new PostgreSqlJobStore(options.ConnectionString));
+        builder.Services.AddSingleton<IRecurringStore>(_ => new PostgreSqlRecurringStore(options.ConnectionString));
 
         return builder;
     }
